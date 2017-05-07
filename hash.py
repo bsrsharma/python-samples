@@ -67,7 +67,7 @@ for i in range(10000):
   
         for k in range (30):
             rbL[k] = chr(random.randint(0, 255))
-        rblen = random.randint(1, 20)
+        rblen = random.randint(1, 20) + 10
         rb = ''.join(rbL)
         rb = rb[:rblen]
         fileHandle.write(makeNiceStr(rb))
@@ -75,7 +75,7 @@ for i in range(10000):
   
     for k in range (30):
        rbL[k] = chr(random.randint(0, 255))
-    rblen = random.randint(1, 20)
+    rblen = random.randint(1, 20) + 10
     rb = ''.join(rbL)
     rb = rb[:rblen]
     fileHandle.write(makeNiceStr(rb))
